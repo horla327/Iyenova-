@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:iyenova/screens/OpeningScreen.dart';
 import 'package:iyenova/screens/onboardingscreen1.dart';
 
 void main() {
@@ -13,8 +14,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(initialRoute: OnboardingScreenOne.id, routes: {
+    return MaterialApp(initialRoute: OpeningScreen.id, routes: {
       OnboardingScreenOne.id: (context) => OnboardingScreenOne(),
+      OpeningScreen.id: (context) => OpeningScreen(),
     });
   }
 }
