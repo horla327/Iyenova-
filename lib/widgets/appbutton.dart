@@ -34,6 +34,7 @@ class AppButton extends StatelessWidget {
         label,
         style: GoogleFonts.poppins(
           color: Colors.white,
+          fontWeight: FontWeight.bold,
         ),
       ),
     );

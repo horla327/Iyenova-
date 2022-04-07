@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:iyenova/widgets/appbutton.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class OnboardingScreenOne extends StatelessWidget {
-  static const String id = "Onboarding_Screen_One";
-  const OnboardingScreenOne({Key? key}) : super(key: key);
+class OnboardingScreenTwo extends StatelessWidget {
+  static const String id = "Onboarding_Screen_Two";
+  const OnboardingScreenTwo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class OnboardingScreenOne extends StatelessWidget {
         body: Stack(
           children: [
             Image.asset(
-              'assets/images/onboarding_1.png',
+              'assets/images/onboarding_2.png',
               width: 360,
               fit: BoxFit.cover,
               color: const Color.fromRGBO(0, 0, 0, 0.49),
@@ -38,7 +38,7 @@ class OnboardingScreenOne extends StatelessWidget {
                 Align(
                   alignment: Alignment.center,
                   child: Text(
-                    'Find The Best',
+                    'Get Styled',
                     style: GoogleFonts.poppins(
                       fontSize: 30,
                       fontWeight: FontWeight.w500,
@@ -50,14 +50,14 @@ class OnboardingScreenOne extends StatelessWidget {
                   height: 10,
                 ),
                 Container(
-                  color: Color(0xFFC12A33),
+                  color: Colors.black,
                   margin: EdgeInsets.only(left: 107),
                   padding: EdgeInsets.symmetric(
                     vertical: 13,
                     horizontal: 70,
                   ),
                   child: Text(
-                    'fashion style for you',
+                    'by the best designers',
                     style: GoogleFonts.poppins(
                       color: Colors.white,
                     ),
