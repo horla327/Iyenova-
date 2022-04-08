@@ -122,6 +122,7 @@ class CreateAccount extends StatelessWidget {
                 onPressed: () {},
               ),
             ),
+            SizedBox(height: 10.0),
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -130,16 +131,24 @@ class CreateAccount extends StatelessWidget {
                   "Already have an account?",
                   style: GoogleFonts.poppins(fontSize: 11, color: Colors.black),
                 ),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    "Sign in",
-                    style: GoogleFonts.poppins(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.black),
-                  ),
+
+                Text(
+                  " Sign in",
+                  style: GoogleFonts.poppins(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.black),
                 ),
+                // TextButton(
+                //   child: Text(
+                //     "Sign in",
+                //     style: GoogleFonts.poppins(
+                //         fontSize: 11,
+                //         fontWeight: FontWeight.w700,
+                //         color: Colors.black),
+                //   ),
+                //   onPressed: () {},
+                // ),
               ],
             )
           ]),
