@@ -2,8 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:iyenova/screens/CreateAccountScreen.dart';
+import 'package:iyenova/screens/LoginScreen.dart';
 import 'package:iyenova/screens/OnboardingScreen2.dart';
 import 'package:iyenova/screens/OpeningScreen.dart';
+import 'package:iyenova/screens/VerifyOTP.dart';
 import 'package:iyenova/screens/onboardingscreen1.dart';
 
 void main() {
@@ -21,6 +23,8 @@ class MyApp extends StatelessWidget {
       OnboardingScreenOne.id: (context) => OnboardingScreenOne(),
       OnboardingScreenTwo.id: (context) => OnboardingScreenTwo(),
       CreateAccount.id: (context) => CreateAccount(),
+      LoginScreen.id: (context) => LoginScreen(),
+      VerificationScreen.id: (context) => VerificationScreen(),
     });
   }
 }
