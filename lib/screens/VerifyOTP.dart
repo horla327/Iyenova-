@@ -54,11 +54,7 @@ class VerificationScreen extends StatelessWidget {
             SizedBox(
               height: 50,
             ),
-            Row(
-              children: [
-                TextboxOTP(),
-              ],
-            ),
+            
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

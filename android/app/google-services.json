@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1000307349018",
+    "project_id": "iyenova",
+    "storage_bucket": "iyenova.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000307349018:android:f6211291bb3776c92ee3a3",
+        "android_client_info": {
+          "package_name": "com.example.iyenova"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000307349018-6fi3aontblgjj2gsfrnl7tairqofo76j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGZUGsnOeLqlV22Sy-INtTdlpHYMDSC-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000307349018-6fi3aontblgjj2gsfrnl7tairqofo76j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
