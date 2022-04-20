@@ -3,13 +3,51 @@
 import 'package:flutter/material.dart';
 import 'package:iyenova/screens/LoginScreen.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:iyenova/widgets/textboxOTP.dart';
-import 'package:iyenova/widgets/textbox.dart';
+import 'package:iyenova/screens/TransactionPinSetup.dart';
+import 'package:pinput/pinput.dart';
+import 'package:iyenova/widgets/appbutton.dart';
 
-class VerificationScreen extends StatelessWidget {
+class VerificationScreen extends StatefulWidget {
   static const String id = "verification-screen";
   const VerificationScreen({Key? key}) : super(key: key);
 
+  @override
+  State<VerificationScreen> createState() => _VerificationScreenState();
+}
+
+class _VerificationScreenState extends State<VerificationScreen> {
+  // final TextEditingController _pinPutController = TextEditingController();
+  // final FocusNode _pinPutFocusNode = FocusNode();
+  // final BoxDecoration pinPutDecoration = BoxDecoration(
+  //   color: const Color.fromRGBO(43, 46, 66, 1),
+  //   borderRadius: BorderRadius.circular(10.0),
+  //   border: Border.all(
+  //     color: const Color.fromRGBO(320, 203, 224, 1),
+  //   ),
+  // );
+  final defaultPinTheme = PinTheme(
+    width: 50,
+    height: 50,
+    textStyle: TextStyle(
+        fontSize: 20,
+        color: Color.fromRGBO(30, 60, 87, 1),
+        fontWeight: FontWeight.w600),
+    decoration: BoxDecoration(
+      border: Border.all(color: Colors.black),
+      borderRadius: BorderRadius.circular(5),
+    ),
+  );
+
+  // final focusedPinTheme = defaultPinTheme.copyDecorationWith(
+  //   border: Border.all(color: Color.fromRGBO(114, 178, 238, 1)),
+  //   borderRadius: BorderRadius.circular(8),
+  // );
+
+  // final submittedPinTheme = defaultPinTheme.copyWith(
+  //   decoration: defaultPinTheme.decoration.copyWith(
+  //     color: Color.fromRGBO(234, 239, 243, 1),
+  //   ),
+  // );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,7 +92,20 @@ class VerificationScreen extends StatelessWidget {
             SizedBox(
               height: 50,
             ),
-            
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Pinput(
+                defaultPinTheme: defaultPinTheme,
+                // focusedPinTheme: focusedPinTheme,
+                // submittedPinTheme: submittedPinTheme,
+                validator: (s) {
+                  return s == '222222' ? null : 'Pin is incorrect';
+                },
+                pinputAutovalidateMode: PinputAutovalidateMode.onSubmit,
+                showCursor: true,
+                onCompleted: (pin) => print(pin),
+              ),
+            ),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -82,7 +133,20 @@ class VerificationScreen extends StatelessWidget {
                 //   },
                 // ),
               ],
-            )
+            ),
+            SizedBox(
+              height: 270,
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15),
+              child: AppButton(
+                label: 'Verify',
+                backgroundColor: Colors.black,
+                onPressed: () {
+                  Navigator.pushNamed(context, TransactionPinScreen.id);
+                },
+              ),
+            ),
           ],
         ),
       )),

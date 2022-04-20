@@ -50,6 +50,7 @@ dev_dependencies:
   firebase_auth: ^3.3.6
   cloud_firestore: ^3.1.7
   pinput: ^2.2.7
+  pin_code_fields: ^7.4.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -5,6 +5,7 @@ import 'package:iyenova/screens/CreateAccountScreen.dart';
 import 'package:iyenova/screens/LoginScreen.dart';
 import 'package:iyenova/screens/OnboardingScreen2.dart';
 import 'package:iyenova/screens/OpeningScreen.dart';
+import 'package:iyenova/screens/TransactionPinSetup.dart';
 import 'package:iyenova/screens/VerifyOTP.dart';
 import 'package:iyenova/screens/onboardingscreen1.dart';
 
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       CreateAccount.id: (context) => CreateAccount(),
       LoginScreen.id: (context) => LoginScreen(),
       VerificationScreen.id: (context) => VerificationScreen(),
+      TransactionPinScreen.id: (context) => TransactionPinScreen(),
     });
   }
 }
