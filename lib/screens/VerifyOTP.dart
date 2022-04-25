@@ -1,11 +1,11 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:iyenova/screens/LoginScreen.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iyenova/screens/TransactionPinSetup.dart';
 import 'package:iyenova/widgets/appbutton.dart';
+import 'package:iyenova/widgets/pinTextField.dart';
 
 class VerificationScreen extends StatefulWidget {
   static const String id = "verification-screen";
@@ -123,37 +123,6 @@ class _VerificationScreenState extends State<VerificationScreen> {
           ),
         ),
       )),
-    );
-  }
-}
-
-class PinTextField extends StatelessWidget {
-  const PinTextField({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 45,
-      width: 45,
-      child: TextFormField(
-        onChanged: (value) {
-          if (value.length == 1) {
-            FocusScope.of(context).nextFocus();
-          }
-        },
-        decoration: InputDecoration(
-          border: OutlineInputBorder(),
-        ),
-        style: Theme.of(context).textTheme.headline6,
-        keyboardType: TextInputType.number,
-        textAlign: TextAlign.center,
-        inputFormatters: [
-          LengthLimitingTextInputFormatter(1),
-          FilteringTextInputFormatter.digitsOnly,
-        ],
-      ),
     );
   }
 }
