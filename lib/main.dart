@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:iyenova/screens/CreateAccountScreen.dart';
+import 'package:iyenova/screens/HomePage.dart';
 import 'package:iyenova/screens/LoginScreen.dart';
 import 'package:iyenova/screens/OnboardingScreen2.dart';
 import 'package:iyenova/screens/OpeningScreen.dart';
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
       LoginScreen.id: (context) => LoginScreen(),
       VerificationScreen.id: (context) => VerificationScreen(),
       TransactionPinScreen.id: (context) => TransactionPinScreen(),
+      HomePage.id: (context) => HomePage(),
     });
   }
 }
