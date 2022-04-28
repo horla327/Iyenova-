@@ -23,8 +23,8 @@ class Profile extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(3),
                 child: Container(
-                  width: 45,
-                  height: 45,
+                  width: 40,
+                  height: 40,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     image: DecorationImage(image: images, fit: BoxFit.fill),

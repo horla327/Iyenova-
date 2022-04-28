@@ -6,9 +6,11 @@ import 'package:iyenova/screens/HomePage.dart';
 import 'package:iyenova/screens/LoginScreen.dart';
 import 'package:iyenova/screens/OnboardingScreen2.dart';
 import 'package:iyenova/screens/OpeningScreen.dart';
+import 'package:iyenova/screens/Product%20Details/ProductDetails.dart';
 import 'package:iyenova/screens/TransactionPinSetup.dart';
 import 'package:iyenova/screens/VerifyOTP.dart';
 import 'package:iyenova/screens/onboardingscreen1.dart';
+import 'screens/Product Details/product.dart';
 
 void main() {
   runApp(const MyApp());

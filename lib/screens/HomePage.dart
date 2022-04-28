@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:iyenova/screens/Product%20Details/ProductDetails.dart';
+import 'package:iyenova/widgets/circlepicture.dart';
 import 'package:iyenova/widgets/profile.dart';
 
 class HomePage extends StatelessWidget {
@@ -176,16 +178,8 @@ class HomePage extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Container(
-                                width: 30,
-                                height: 30,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
-                                      image:
-                                          AssetImage('assets/images/neon.png'),
-                                      fit: BoxFit.fill),
-                                ),
+                              ProfilePicture(
+                                image: AssetImage('assets/images/neon.png'),
                               ),
                               SizedBox(
                                 width: 3,
@@ -289,16 +283,8 @@ class HomePage extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Container(
-                                width: 30,
-                                height: 30,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
-                                      image:
-                                          AssetImage('assets/images/neon.png'),
-                                      fit: BoxFit.fill),
-                                ),
+                              ProfilePicture(
+                                image: AssetImage('assets/images/neon.png'),
                               ),
                               SizedBox(
                                 width: 3,
@@ -364,7 +350,10 @@ class HomePage extends StatelessWidget {
                                 width: 90,
                               ),
                               ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushNamed(
+                                      context, ProductDetails.id);
+                                },
                                 style: ElevatedButton.styleFrom(
                                   primary: Colors.black,
                                 ),
@@ -402,16 +391,8 @@ class HomePage extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Container(
-                                width: 30,
-                                height: 30,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
-                                      image:
-                                          AssetImage('assets/images/neon.png'),
-                                      fit: BoxFit.fill),
-                                ),
+                              ProfilePicture(
+                                image: AssetImage('assets/images/neon.png'),
                               ),
                               SizedBox(
                                 width: 3,
@@ -515,16 +496,8 @@ class HomePage extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Container(
-                                width: 30,
-                                height: 30,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
-                                      image:
-                                          AssetImage('assets/images/neon.png'),
-                                      fit: BoxFit.fill),
-                                ),
+                              ProfilePicture(
+                                image: AssetImage('assets/images/neon.png'),
                               ),
                               SizedBox(
                                 width: 3,
