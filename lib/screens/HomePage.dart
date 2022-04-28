@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:iyenova/widgets/profile.dart';
 
 class HomePage extends StatelessWidget {
   static const String id = "home-page";
@@ -696,59 +697,6 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class Profile extends StatelessWidget {
-  const Profile({required this.images, required this.uname});
-  final ImageProvider images;
-  final String uname;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Color(0xFFE5E5E5),
-        borderRadius: BorderRadius.circular(25),
-      ),
-      child: Padding(
-        padding:
-            const EdgeInsets.only(top: 12, bottom: 12, left: 16, right: 16),
-        child: Column(
-          children: [
-            Container(
-              width: 40,
-              height: 40,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.centerLeft,
-                    end: Alignment.centerRight,
-                    colors: [
-                      Colors.purple.shade900,
-                      Colors.purple.shade100,
-                    ]),
-                // border: Border.all(
-                //     color: Color(0xFFC4C4C4),
-                //     style: BorderStyle.solid,
-                //     width: 3),
-                shape: BoxShape.circle,
-                image: DecorationImage(image: images, fit: BoxFit.fill),
-              ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Text(
-              uname,
-              style: GoogleFonts.poppins(
-                  fontSize: 12,
-                  color: Colors.black,
-                  fontWeight: FontWeight.w500),
-            )
-          ],
         ),
       ),
     );
