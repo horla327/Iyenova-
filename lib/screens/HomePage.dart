@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:iyenova/widgets/appbutton.dart';
 
 class HomePage extends StatelessWidget {
   static const String id = "home-page";
@@ -43,38 +42,54 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 15,
                 ),
                 Text(
                   'Hot Deals',
                   style: GoogleFonts.poppins(
                       fontSize: 18,
-                      fontWeight: FontWeight.w700,
+                      fontWeight: FontWeight.w600,
                       color: Colors.black),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 15,
                 ),
-                Row(
-                  children: [
-                    Profile(
-                      images: AssetImage('assets/images/neon.png'),
-                      uname: 'bisi_fash',
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Profile(
-                        images: AssetImage('assets/images/africa.png'),
-                        uname: 'africana...'),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Profile(
-                      images: AssetImage('assets/images/neon.png'),
-                      uname: 'bisi_fash',
-                    ),
-                  ],
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Profile(
+                        images: AssetImage('assets/images/neon.png'),
+                        uname: 'bisi_fash',
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Profile(
+                          images: AssetImage('assets/images/africa.png'),
+                          uname: 'africana...'),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Profile(
+                        images: AssetImage('assets/images/neon.png'),
+                        uname: 'bisi_fash',
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Profile(
+                          images: AssetImage('assets/images/africa.png'),
+                          uname: 'africana...'),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Profile(
+                        images: AssetImage('assets/images/neon.png'),
+                        uname: 'bisi_fash',
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -701,12 +716,12 @@ class Profile extends StatelessWidget {
       ),
       child: Padding(
         padding:
-            const EdgeInsets.only(top: 15.0, bottom: 15, left: 20, right: 20),
+            const EdgeInsets.only(top: 12, bottom: 12, left: 16, right: 16),
         child: Column(
           children: [
             Container(
-              width: 60,
-              height: 60,
+              width: 40,
+              height: 40,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                     begin: Alignment.centerLeft,
@@ -728,7 +743,10 @@ class Profile extends StatelessWidget {
             ),
             Text(
               uname,
-              style: GoogleFonts.poppins(fontSize: 12, color: Colors.black),
+              style: GoogleFonts.poppins(
+                  fontSize: 12,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500),
             )
           ],
         ),
