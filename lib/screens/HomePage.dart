@@ -116,38 +116,57 @@ class HomePage extends StatelessWidget {
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(10.0),
-                    child: Row(
-                      children: [
-                        Text(
-                          'CLOTHES',
-                          style: GoogleFonts.poppins(
-                              fontSize: 14, color: Colors.white),
-                        ),
-                        SizedBox(
-                          width: 25,
-                        ),
-                        Text(
-                          'SHOES',
-                          style: GoogleFonts.poppins(
-                              fontSize: 14, color: Colors.white),
-                        ),
-                        SizedBox(
-                          width: 25,
-                        ),
-                        Text(
-                          'WIGS',
-                          style: GoogleFonts.poppins(
-                              fontSize: 14, color: Colors.white),
-                        ),
-                        SizedBox(
-                          width: 25,
-                        ),
-                        Text(
-                          'ACCESSORIES',
-                          style: GoogleFonts.poppins(
-                              fontSize: 14, color: Colors.white),
-                        ),
-                      ],
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          Text(
+                            'CLOTHES',
+                            style: GoogleFonts.poppins(
+                                fontSize: 14, color: Colors.white),
+                          ),
+                          SizedBox(
+                            width: 25,
+                          ),
+                          Text(
+                            'SHOES',
+                            style: GoogleFonts.poppins(
+                                fontSize: 14, color: Colors.white),
+                          ),
+                          SizedBox(
+                            width: 25,
+                          ),
+                          Text(
+                            'WIGS',
+                            style: GoogleFonts.poppins(
+                                fontSize: 14, color: Colors.white),
+                          ),
+                          SizedBox(
+                            width: 25,
+                          ),
+                          Text(
+                            'ACCESSORIES',
+                            style: GoogleFonts.poppins(
+                                fontSize: 14, color: Colors.white),
+                          ),
+                          SizedBox(
+                            width: 25,
+                          ),
+                          Text(
+                            'WRISTWATCHES',
+                            style: GoogleFonts.poppins(
+                                fontSize: 14, color: Colors.white),
+                          ),
+                          SizedBox(
+                            width: 25,
+                          ),
+                          Text(
+                            'SLIPPERS',
+                            style: GoogleFonts.poppins(
+                                fontSize: 14, color: Colors.white),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
