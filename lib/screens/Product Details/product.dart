@@ -54,4 +54,15 @@ List<Product> products = [
       image: AssetImage('assets/images/neon.png'),
     ),
   ),
+  Product(
+    id: 4,
+    name: 'BeeSee Stores',
+    uname: "@bisi_fash",
+    image: AssetImage('assets/images/woman1.png'),
+    price: 'N14000.00',
+    dressname: 'Stretchy Body Con Dress',
+    profile: ProfilePicture(
+      image: AssetImage('assets/images/neon.png'),
+    ),
+  ),
 ];
